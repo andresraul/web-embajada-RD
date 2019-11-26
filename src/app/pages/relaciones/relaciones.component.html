@@ -1,0 +1,21 @@
+<div *ngIf="page$ | async as page">
+  <section class="usa-hero">
+    <div class="grid-container">
+      <div class="margin-top-3 margin-bottom-3">
+        <h1 class="usa-hero__heading--alt">{{page.title}}
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class="usa-layout-docs usa-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+          <app-aside [MenuId]="page.category"></app-aside>
+        </aside>
+        <div class="usa-layout-docs__main desktop:grid-col-9" [innerHTML]="page.body">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

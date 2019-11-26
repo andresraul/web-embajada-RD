@@ -1,0 +1,129 @@
+<footer class="usa-footer usa-footer--big">
+  <div class="grid-container usa-footer__return-to-top">
+    <button class="usa-button  usa-button--unstyled" [ngx-scroll-to]="'top'">Volver Arriba</button>
+  </div>
+  <div class="usa-footer__primary-section padding-y-5">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-8">
+          <nav class="usa-footer__nav">
+            <div class="grid-row grid-gap-4">
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">La Embajada</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Palabras del Embajador</a>
+                    </li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Personal Diplomático</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Historia de la Embajada</a>
+                    </li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Galería de Embajadores</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Cultura y Educación</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Asuntos Culturales</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Cultura Culinaria</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Folklore Dominicano</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Acuerdos y Convenios</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Cine</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Relaciones con España</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Relaciones Bilaterales</a>
+                    </li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Cooperación</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Tratados</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Acuerdos</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Prensa</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Eventos</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Noticias</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Imágenes</a></li>
+                    <li class="usa-footer__secondary-link"><a routerLink="/">Videos</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-4">
+          <div class="usa-sign-up">
+            <h3 class="usa-sign-up__heading">Suscríbete al newsletter</h3>
+            <form class="usa-form">
+              <label class="usa-label" for="email" id="">Tu correo electrónico</label>
+              <input class="usa-input" id="email" name="email" type="email">
+              <button class="usa-button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          <div class="grid-col-auto">
+            <img width="80" class="usa-footer__logo-img" [src]="config.logo" alt="config.sitename" />
+          </div>
+          <div class="grid-col-fill">
+            <h3 class="usa-footer__logo-heading" [innerHTML]="config.sitename"></h3>
+          </div>
+        </div>
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          <div class="usa-footer__social-links grid-row grid-gap-1">
+            <div class="grid-col-auto">
+              <a target="_blank" class="usa-social-link radius-right-pill radius-left-pill usa-social-link--facebook"
+                [href]="config.socialNetworks[0].link">
+                <span [innerHTML]="config.socialNetworks[0].name"></span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a target="_blank" class="usa-social-link radius-right-pill radius-left-pill usa-social-link--twitter"
+                [href]="config.socialNetworks[1].link">
+                <span [innerHTML]="config.socialNetworks[1].name"></span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a target="_blank" class="usa-social-link radius-right-pill radius-left-pill usa-social-link--youtube"
+                [href]="config.socialNetworks[2].link">
+                <span [innerHTML]="config.socialNetworks[2].name"></span>
+              </a>
+            </div>
+            <div class="grid-col-auto">
+              <a target="_blank" class="usa-social-link radius-right-pill radius-left-pill usa-social-link--rss"
+                [href]="config.socialNetworks[3].link">
+                <span [innerHTML]="config.socialNetworks[3].name"></span>
+              </a>
+            </div>
+          </div>
+          <h3 class="usa-footer__contact-heading">Contacto</h3>
+          <address class="usa-footer__address">
+            <div class="usa-footer__contact-info grid-row grid-gap">
+              <div class="grid-col-auto">
+                <a [href]="'tel:' + config.phone" [innerHTML]="config.phone"></a>
+              </div>
+              <div class="grid-col-auto">
+                <a [href]="'mailto:' + config.email" [innerHTML]="config.email"></a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

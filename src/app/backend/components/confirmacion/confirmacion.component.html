@@ -1,0 +1,65 @@
+<div class="grid-container">
+    <div class="grid-row">
+
+        <div class="tablet:grid-col-4">
+            <div class="margin-top-5">
+
+                <div *ngIf="successMessage" class="usa-alert usa-alert--success">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Éxito</h3>
+                        <p class="usa-alert__text">{{successMessage}}</p>
+                    </div>
+                </div>
+
+                <div *ngIf="errorMessage" class="usa-alert usa-alert--error" role="alert">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Mensaje</h3>
+                        <p class="usa-alert__text">{{ errorMessage }}</p>
+                    </div>
+                </div>
+
+
+                <div *ngIf="info" class="usa-alert usa-alert--info">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Información</h3>
+                        <p class="usa-alert__text">{{ info }}</p>
+                    </div>
+                </div>
+
+
+                <form class="usa-form" [formGroup]="formulario" (ngSubmit)="onSubmit(formulario.value)" novalidate="novalidate">
+                    <fieldset class="usa-fieldset">
+
+
+                        <div class="usa-form-group usa-form-group--error" [ngClass]="{'usa-form-group--error': (password.hasError('required') && password.touched) || (password.hasError('minlength') && password.touched)}">
+                            <label class="usa-label" for="password">Escriba su contraseña</label>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="password.hasError('required') && password.touched">La contraseña es obligatoria.</span>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="password.hasError('minlength') && password.touched">La contraseña debe contener al menos 8 caracteres.</span>
+                            <input formControlName="password" class="usa-input" id="password" name="password" type="password" aria-describedby="input-error-message">
+                        </div>
+
+
+
+
+
+                        <div class="usa-form-group usa-form-group--error" [ngClass]="{'usa-form-group--error': (password2.hasError('required') && password2.touched) || (password2.hasError('noigual') && password2.touched)}">
+                            <label class="usa-label" for="password2">Repita la contraseña</label>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="password2.hasError('required') && password2.touched">Este campo es obligatorio.</span>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="password2.hasError('noigual') && password2.touched">Las contraseñas deben coincidir.</span>
+                            <input formControlName="password2" class="usa-input" id="password2" name="password2" type="password" aria-describedby="input-error-message">
+                        </div>
+
+
+
+                        <div>
+                            <button class="usa-button" type="submit" [disabled]="!formulario.valid">Crear contraseña</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

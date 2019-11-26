@@ -1,0 +1,13 @@
+<nav aria-label="Secondary navigation">
+    <ul class="usa-sidenav">
+        <li class="usa-sidenav__item">
+            <a routerLinkActive="usa-current" routerLink="publicaciones">Publicaciones</a>
+        </li>
+        <li class="usa-sidenav__item" *ngIf="isAdmin">
+            <a routerLinkActive="usa-current" routerLink="usuarios">Usuarios</a>
+        </li>
+        <li class="usa-sidenav__item">
+            <a routerLinkActive="usa-current" routerLink="config">Configuración</a>
+        </li>
+    </ul>
+</nav>

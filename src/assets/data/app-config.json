@@ -1,0 +1,25 @@
+{
+    "sitename": "Embajada de República Dominicana Ante el Reino de España",
+    "mobile_sitename": "Embajada Dominicana",
+    "logo": "./assets/img/logo.svg",
+    "phone": "xxxxxxxxx",
+    "email": "embajada@embajadadominicana.es",
+    "address": "Paseo de la Castellana, 30, 1D",
+    "social_networks": [{
+            "name": "Facebook",
+            "link": "https://www.facebook.com/xxxxxxxxxxxx/"
+        },
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/EmbRDMadrid"
+        },
+        {
+            "name": "Youtube",
+            "link": "https://www.youtube.com/channel/xxxxxxx"
+        },
+        {
+            "name": "RSS",
+            "link": "#"
+        }
+    ]
+}

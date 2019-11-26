@@ -1,0 +1,23 @@
+<button class="usa-button" (click)="editar()">Editar publicación</button>
+
+
+
+<div *ngIf="postData" class="grid-container">
+
+
+    <h2>{{postData.title}}</h2>
+    <img [src]="postData.image | imagesPosts:postData.category" alt="">
+    <h3>{{ postData.category }}</h3>
+
+    <p>{{ postData.created | date: 'dd/MM/yyyy' }}</p>
+    <p *ngIf="userInfo"><strong>{{ userInfo.name + " " + userInfo.lastname }}</strong></p>
+
+    <div class="padding-3">
+        <h4><small>Descripción</small></h4>
+        <p><small>{{ postData.desc }}</small></p>
+    </div>
+
+    <div [innerHTML]="postData.body"></div>
+
+
+</div>

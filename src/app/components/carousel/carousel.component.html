@@ -1,0 +1,30 @@
+<ngu-carousel #homeCarousel [inputs]="carouselConfig" [dataSource]="carouselItems"
+  (carouselLoad)="carouselLoaded = true">
+  <ngu-tile style="padding: 0" *nguCarouselDef="let item; let i = index">
+    <div class="carousel-item">
+      <img [src]="item.img" [alt]="item.alt" class="img-responsive" />
+      <div class="carousel-caption">
+        <div class="usa-hero__callout radius-md">
+          <h1 class="usa-hero__heading" [innerHTML]="item.title">
+          </h1>
+          <p>
+            {{item.caption}}
+          </p>
+          <a [href]="item.link" class="usa-button usa-button--secondary" href="javascript:void(0)">Saber Más</a>
+        </div>
+      </div>
+    </div>
+  </ngu-tile>
+  <button NguCarouselPrev class="button button-left">
+    <span class="lnr lnr-chevron-left"></span>
+  </button>
+  <button NguCarouselNext class="button button-right">
+    <span class="lnr lnr-chevron-right"></span>
+  </button>
+
+  <ul NguCarouselPoint class="ngxcarouselpoint">
+    <li *ngFor="let i of homeCarousel.pointNumbers; let i = index" [class.active]="i==homeCarousel.activePoint"
+      (click)="homeCarousel.moveTo(i)"></li>
+  </ul>
+
+</ngu-carousel>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Panorama General",
+    "slug": "panorama-general",
+    "body": "<h2>Panorama General RD</h2><p>La República Dominicana es un país rico en calidad humana y recursos naturales. Su economía ha alcanzado la tasa de crecimiento económico más elevada de América Latina y el Caribe en las últimas dos décadas. Tan sólo el año pasado (2018) la economía creció al ritmo del 7% superando a toda la región.</p><a class='usa-button' href='#'>Ver Informe</a>"
+  },
+  {
+    "id": 2,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Directorio de Instituciones",
+    "slug": "directorio-de-instituciones",
+    "body": "<h3>Ministerio de la Presidencia</h3><p><a class='usa-button--unstyled' href='http://minpre.gob.do/'>http://minpre.gob.do/</a></p><h3>Ministerio de Industria y Comercio</h3><p><a class='usa-button--unstyled' href='https://www.micm.gob.do/'>https://www.micm.gob.do/</a></p><h3>Centro de Exportación e Inversión de la República Dominicana (CEI-RD)</h3><p><a class='usa-button--unstyled' href='http://cei-rd.gob.do/es/inicio/'>http://cei-rd.gob.do/es/inicio/</a></p><h3>Consejo Nacional de Zonas Francas de Exportación</h3><p><a class='usa-button--unstyled' href='http://cnzfe.gob.do/index.php'>http://cnzfe.gob.do/index.php</a></p><h3>Banco Central de la República Dominicana</h3><p><a class='usa-button--unstyled' href='http://www.bancentral.gov.do/'>http://www.bancentral.gov.do/</a></p><h3>Ministerio de Hacienda</h3><p><a class='usa-button--unstyled' href='http://www.hacienda.gob.do/'>http://www.hacienda.gob.do/</a></p><h3>Dirección General de Impuestos Internos</h3><p><a class='usa-button--unstyled' href='http://www.dgii.gov.do/Paginas/inicio.aspx'>http://www.dgii.gov.do/Paginas/inicio.aspx</a></p><h3>Dirección General de Aduanas</h3><p><a class='usa-button--unstyled' href='http://www.aduanas.gob.do/'>http://www.aduanas.gob.do/</a></p><h3>Ministerio de Turismo</h3><p><a class='usa-button--unstyled' href='http://mitur.gob.do/'>http://mitur.gob.do/</a></p><h3>Ministerio de Trabajo</h3><p><a class='usa-button--unstyled' href='http://www.ministeriodetrabajo.gob.do/'>http://www.ministeriodetrabajo.gob.do/</a></p><h3>Ministerio de Agricultura</h3><p><a class='usa-button--unstyled' href='http://www.agricultura.gob.do/'>http://www.agricultura.gob.do/</a></p><h3>Dirección General de Cine</h3><p><a class='usa-button--unstyled' href='http://www.dgcine.gob.do/'>http://www.dgcine.gob.do/</a></p>"
+  },
+  {
+    "id": 3,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Economia Dominicana",
+    "slug": "economia-dominicana",
+    "body": "<h2>Resultados preliminares de la Economía Dominicana Enero-Diciembre 2018</h2><p>La República Dominicana es un país rico en calidad humana y recursos naturales. Su economía ha alcanzado la tasa de crecimiento económico más elevada de América Latina y el Caribe en las últimas dos décadas. Tan sólo el año pasado (2018) la economía creció al ritmo del 7% superando a toda la región.</p><a class='usa-button' href='#'>Ver Informe</a><h2>Resultados preliminares de la Economía Dominicana Enero-Diciembre 2017</h2><p>La República Dominicana es un país rico en calidad humana y recursos naturales. Su economía ha alcanzado la tasa de crecimiento económico más elevada de América Latina y el Caribe en las últimas dos décadas. Tan sólo el año pasado (2017) la economía creció al ritmo del 7% superando a toda la región.</p><a class='usa-button' href='#'>Ver Informe</a><h2>Resultados preliminares de la Economía Dominicana Enero-Diciembre 2016</h2><p>La República Dominicana es un país rico en calidad humana y recursos naturales. Su economía ha alcanzado la tasa de crecimiento económico más elevada de América Latina y el Caribe en las últimas dos décadas. Tan sólo el año pasado (2016) la economía creció al ritmo del 7% superando a toda la región.</p><a class='usa-button' href='#'>Ver Informe</a>"
+  },
+  {
+    "id": 4,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Comercio Bilateral",
+    "slug": "comercio-bilateral",
+    "body": "<p>Intercambio Comercial Entre RD y España</p>"
+  },
+  {
+    "id": 5,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Inversión Española en Dominicana",
+    "slug": "inversion-espanola-en-dominicana",
+    "body": "<p>Las inversiones de España en República Dominicana rondan los 3,500 millones de dólares en áreas de turismo, infraestructura y empresas aseguradoras, con proyección de aumentar en los próximos años, fruto de la gran colonia de empresarios de esa nación radicados en el país.</p><p>Así lo informó el embajador de la nación europea en el país, Alejandro Abellán García, durante la celebración de un desayuno-conferencia titulado “Gestión de Riesgo y Evaluaciones Mútuas del Grupo de Acción Financiera del de Lalinoamérca”. El panel fue celebrado este jueves en el salón Bruselas del Hotel Catalonia, en la capital.</p><p>“Tenemos una inversión de unos tres mil 500 millones de dólares de empresarios españoles radicados en el país. Es una cifra que aumentará debido a la estabilidad económica existente en el país”, dijo el diplomático.</p><p>El encuentro fue organizado por la Cámara Oficial Española de Comercio, Industria y Turismo, en República Dominicana.</p><p>En la actividad estuvo presente el presidente de dicha entidad, Juan Antonio García Carnicer, quien también valoró las inversiones de su país en República Dominicana. García también atribuyó el aumento del número de empresas españolas en el país, a la estabilidad económica y a otros factores que garantizan los recursos invertidos. “República Dominicana tiene una excelente estabilidad económica y por ello hay tantos empresarios de España y otros países europeos que se han instalado en el país”, dijo García a El Nacional.</p><p>En el simposio participaron como expositores Juan Carlos Medina Carruitero, vicepresidente corporativo, para Centroamérica y el Caribe, del grupo financiero BOD; a Tristán Carbuccia Medina, Gerente senior de la Administración de conflictos OMG, y a la gerente de esa institución, Adewilxe C. Castillos Cabral.</p><p>El conversatorio contó con la a asistencia, además, del empresario domínico-español Ángel Baliño, quien destacó la importancia de la actividad.</p><p>Un Apunte</p><p>La proyecciones indican que las inversiones de España en el país se incrementarán en los próximos años, debido a la estabilidad democrática. Muchas de las inversiones de esa nación están ubicadas en la zona de Punta Cana y Puerto Plata, en hotelería e infraestructura.</p><p>La Cámara Oficial Española fue fundada en 1924, con el objetivo de fomentar las relaciones comerciales entre ambas naciones, brindar asistencia técnica empresarial a la colonia española radicada en el país y contribuir con el desarrollo de la República Dominicana.</p><p>Entre España y República Dominicana existe una excelente relación, debido a la amplia colonia española radicada en el país, muchos de cuyos ciudadanos tienen hoteles en la región Este del país y en la provincia de Puerto Plata. Asimismo, se calcula que más de 100 mil dominicanos residen en la nación europea, la mayoría de ellos en Madrid y Barcelona.</p>"
+  },
+  {
+    "id": 6,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Areas de Interés para el Comercio",
+    "slug": "areas-de-interes-para-el-comercio",
+    "body": "<h2>Areas de Interés para el Comercio</h2><p></p>"
+  },
+  {
+    "id": 7,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Marco Normativo Básico",
+    "slug": "marco-normativo-basico",
+    "body": "<h2>Marco Normativo Básico</h2><p></p>"
+  },
+  {
+    "id": 8,
+    "image": "./assets/img/hero.png",
+    "date": "2019-09-29T15:20:44",
+    "category": 4,
+    "title": "Guía de Negocios en Dominicana",
+    "slug": "guia-de-negocios-en-dominicana",
+    "body": "<h2>Guía de Negocios en Dominicana</h2><p></p>"
+  }
+]

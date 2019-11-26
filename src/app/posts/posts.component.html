@@ -1,0 +1,21 @@
+<section class="tablet:grid-col-12">
+  <div class="grid-row grid-gap">
+    <div *ngFor="let post of postList; let i = index" class="tablet:grid-col-6">
+      <div class="grid-row grid-gap margin-bottom-2">
+        <div class="grid-col-5">
+          <a routerLink="{{ post.slug }}">
+            <img class="radius-md"
+              src="{{ post.image }}">
+          </a>
+        </div>
+        <div class="grid-col-7">
+          <h3 class="margin-top-0 margin-bottom-1"><a class="underline-primary-vivid text-primary"
+              routerLink="{{ post.slug }}">{{ post.title }}</a>
+          </h3>
+          <small class="date-meta">{{ post.created }}</small>
+          <p class="margin-top-1">{{ post.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

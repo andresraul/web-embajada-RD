@@ -1,0 +1,7 @@
+<nav aria-label="Secondary navigation">
+  <ul [class.hidden]="!(menu.id==MenuId)" *ngFor="let menu of asideMenuData" class="usa-sidenav">
+    <li *ngFor="let submenu of menu.submenu" class="usa-sidenav__item">
+      <a routerLinkActive="usa-current" routerLink="../../{{submenu.url}}">{{submenu.title}}</a>
+    </li>
+  </ul>
+</nav>

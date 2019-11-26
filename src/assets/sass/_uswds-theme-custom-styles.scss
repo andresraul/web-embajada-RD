@@ -1,0 +1,279 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+
+/* Social Icons */
+
+.usa-social-link--facebook {
+    background-color: #3b5999;
+}
+
+.usa-social-link--twitter {
+    background-color: #55acee;
+}
+
+.usa-social-link--youtube {
+    background-color: #cd201f;
+}
+
+.usa-social-link--rss {
+    background-color: #ff6600;
+}
+
+.usa-header__logo {
+    @include u-margin-y(1);
+
+    @include at-media('mobile-lg') {
+        @include u-margin-y(0);
+        @include u-flex('align-center');
+    }
+}
+
+.usa-header__logo-img {
+    margin-right: 1rem;
+    max-width: 2.1rem;
+    margin-top: 2px;
+}
+
+.usa-header__logo-heading {
+    font-size: 1rem;
+    @include u-margin-y(1);
+    line-height: line-height('heading', 1);
+}
+
+hr {
+    height: 1px;
+    border: none;
+    color: #ccc;
+    background-color: #ccc;
+}
+
+#noticias {
+    a {
+        text-decoration: none;
+    }
+}
+
+.usa-section--secundary-darker {
+    background-color: #b51d09;
+    color: color('white');
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: color('accent-cool');
+    }
+
+    p {
+        color: color('white');
+    }
+
+    a {
+        color: color('base-lighter');
+
+        &:hover {
+            color: color('white');
+        }
+    }
+}
+
+.usa-logo a {
+    max-width: 500px;
+}
+
+/* Hero Header */
+
+.flag {
+    color: #D93430;
+    display: block;
+    font-size: .8650735294rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+/* Flex Cards */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    //margin: spacing-multiple(2);
+
+    .card-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 65%; // 16:9 aspect ratio
+        }
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: spacing-multiple(3);
+        background: #fff;
+
+    }
+
+    .card-title {
+        display: block;
+        padding-left: spacing-multiple(2);
+        padding-right: spacing-multiple(2);
+    }
+
+    .card-action {
+        display: block;
+        width: 100%;
+        bottom: 0;
+        padding: spacing-multiple(2);
+        margin-top: spacing-multiple(2);
+    }
+
+    .card-action__block {
+        text-align: center;
+        padding: 0;
+
+        .usa-button {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+@include at-media(spacing-multiple(80)) {
+
+    .cards__2wide>*,
+    .cards__3wide>*,
+    .cards__4wide>*,
+    .cards__5wide>* {
+        width: calc(50% - 2rem);
+    }
+}
+
+@include at-media(spacing-multiple(128)) {
+    .cards__3wide>* {
+        width: calc(33% - 2rem);
+    }
+}
+
+@include at-media(spacing-multiple(128)) {
+    .cards__4wide>* {
+        width: calc(25% - 2rem);
+    }
+}
+
+@include at-media(spacing-multiple(128)) {
+    .cards__5wide>* {
+        width: calc(20% - 2rem);
+    }
+}
+
+@include at-media('desktop') {
+
+    .usa-header__logo-heading {
+        @include h3;
+    }
+
+    .usa-header__logo-img {
+        max-width: units(10);
+    }
+
+    .card {
+        margin-right: 2.2rem;
+    }
+
+    .usa-header--extended {
+        .usa-logo {
+            margin: 1rem 0 1rem;
+        }
+
+        .usa-nav__inner,
+        .usa-navbar {
+            max-width: units('desktop-lg');
+        }
+    }
+
+    .usa-banner__inner,
+    .usa-banner__content {
+        max-width: units('desktop-lg');
+    }
+
+    .usa-nav__secondary {
+        bottom: 5rem;
+    }
+
+}
+
+.usa-breadcrumb {
+
+  padding: 0.8em 1em;
+  border-radius: 4px;
+  background: hsl(300, 14%, 97%);
+  margin-bottom: 1.5em;
+
+  ol {
+    display: inline-block;
+    margin: 0px;
+    padding-left: 5px;
+    padding-top: 0px;
+  }
+
+  li {
+    a {
+      color: #005ea2;
+    }
+
+    display: inline-block;
+
+    &:not(:last-child):after {
+      background-image: url('../img/alerts/angle-arrow-down.png');
+      background-image: url('../img/angle-arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: right 0 center;
+      background-size: 100%;
+      display: inline-block;
+      content: '';
+      height: 0.5rem;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 0.5rem;
+      transform: rotate(-90deg);
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+<div *ngIf="errorMessage" class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Información</h3>
+        <p class="usa-alert__text">{{errorMessage}}</p>
+    </div>
+</div>
+
+
+
+<form [formGroup]="formPost" class="usa-form usa-form--large margin-top-5" novalidate="novalidate" (ngSubmit)="onSubmit(formPost.value)">
+
+
+    <div class="usa-form-group">
+        <label class="usa-label somelabel" for="options">Seleccione una Categoría</label>
+        <select formControlName="category" class="usa-select" name="options" id="options">
+          <option value>- Categorías -</option>
+          <option *ngIf="accessEventos" value="EVENTOS">Eventos</option>
+          <option *ngIf="accessNoticias" value="NOTICIAS">Noticias</option>
+        </select>
+    </div>
+
+
+    <div class="usa-form-group" [ngClass]="{'usa-form-group--error': invalidExtension}">
+        <label class="usa-label usa-label--error" for="postPhoto">Imagen de cabecera</label>
+        <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="invalidExtension">Extensión no permitida. Las extensiones permitidas son: jpg, jpeg, png y gif</span>
+        <input formControlName="img" class="usa-input" id="img" name="postPhoto" type="file" aria-describedby="input-error-message" (change)="onFileSelected($event)" [ngClass]="{'usa-input--error': invalidExtension}">
+    </div>
+
+
+
+    <div class="usa-form-group">
+        <label class="usa-label usa-label--error" for="title">Título</label>
+        <input formControlName="title" class="usa-input" id="title" name="title" type="text" placeholder="Inserte un título">
+    </div>
+
+
+
+    <div class="usa-form-group">
+        <label class="usa-label somelabel" for="input-type-textarea">Descripción de la entrada</label>
+        <textarea formControlName="desc" class="usa-textarea" id="input-type-textarea" name="input-type-textarea"></textarea>
+    </div>
+
+
+
+
+    <div class="usa-form-group">
+        <label class="usa-label usa-label--error" for="body">Texto Principal</label>
+        <quill-editor formControlName="body" [placeholder]="placehold" [modules]="config" class="editor" [styles]="editorStyle">
+
+        </quill-editor>
+    </div>
+
+
+
+    <div>
+        <button class="usa-button" type="submit" [disabled]="!formPost.valid || invalidExtension">{{ postButton }}</button>
+    </div>
+</form>

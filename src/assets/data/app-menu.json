@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "title": "La Embajada",
+    "submenu": [
+      {
+        "title": "Palabras del embajador",
+        "url": "la-embajada/palabras-del-embajador"
+      },
+      {
+        "title": "Personal Diplomático",
+        "url": "la-embajada/personal-diplomatico"
+      },
+      {
+        "title": "Historia de la Embajada",
+        "url": "la-embajada/historia-de-la-embajada"
+      },
+      {
+        "title": "Galería de Embajadores",
+        "url": "la-embajada/galeria-de-embajadores"
+      },
+      {
+        "title": "Activos Patrimoniales",
+        "url": "la-embajada/activos-patrimoniales"
+      },
+      {
+        "title": "Ingresos y Egresos",
+        "url": "la-embajada/ingresos-y-egresos"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sobre Dominicana",
+    "submenu": [
+      {
+        "title": "Historia",
+        "url": "sobre-dominicana/historia"
+      },
+      {
+        "title": "Padres de la Patria",
+        "url": "sobre-dominicana/padres-de-la-patria"
+      },
+      {
+        "title": "Símbolos Patrios",
+        "url": "sobre-dominicana/simbolos-patrios"
+      },
+      {
+        "title": "Política Exterior",
+        "url": "sobre-dominicana/politica-exterior"
+      },
+      {
+        "title": "Paisajes",
+        "url": "sobre-dominicana/paisajes"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Relaciones con España",
+    "submenu": [
+      {
+        "title": "Relaciones Bilaterales",
+        "url": "relaciones-con-espana/relaciones-bilaterales"
+      },
+      {
+        "title": "Cooperación",
+        "url": "relaciones-con-espana/cooperacion"
+      },
+      {
+        "title": "Tratados",
+        "url": "relaciones-con-espana/tratados"
+      },
+      {
+        "title": "Acuerdos",
+        "url": "relaciones-con-espana/acuerdos"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Comercio e Inversión",
+    "submenu": [
+      {
+        "title": "Panorama General",
+        "url": "comercio-e-inversion/panorama-general"
+      },
+      {
+        "title": "Directorio de Instituciones",
+        "url": "comercio-e-inversion/directorio-de-instituciones"
+      },
+      {
+        "title": "Economia Dominicana",
+        "url": "comercio-e-inversion/economia-dominicana"
+      },
+      {
+        "title": "Comercio Bilateral",
+        "url": "comercio-e-inversion/comercio-bilateral"
+      },
+      {
+        "title": "Inversión Española en Dominicana",
+        "url": "comercio-e-inversion/inversion-espanola-en-dominicana"
+      },
+      {
+        "title": "Areas de Interés para el Comercio",
+        "url": "comercio-e-inversion/areas-de-interes-para-el-comercio"
+      },
+      {
+        "title": "Marco Normativo Básico de la Inversión Extranjera",
+        "url": "comercio-e-inversion/marco-normativo-basico"
+      },
+      {
+        "title": "Guía de Negocios en Dominicana",
+        "url": "comercio-e-inversion/guia-de-negocios-en-dominicana"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cultura y Educación",
+    "submenu": [
+      {
+        "title": "Cine",
+        "url": "cultura-y-educacion/cine"
+      },
+      {
+        "title": "Libros",
+        "url": "cultura-y-educacion/libros"
+      },
+      {
+        "title": "Asuntos Culturales",
+        "url": "cultura-y-educacion/asuntos-culturales"
+      },
+      {
+        "title": "Cultura Culinaria",
+        "url": "cultura-y-educacion/cultura-culinaria"
+      },
+      {
+        "title": "Política Cultural Dominicana",
+        "url": "cultura-y-educacion/politica-cultural-dominicana"
+      },
+      {
+        "title": "Folklore Dominicano",
+        "url": "cultura-y-educacion/folklore-dominicano"
+      },
+      {
+        "title": "Zona Franca",
+        "url": "cultura-y-educacion/zona-franca"
+      },
+      {
+        "title": "Acuerdos y Convenios",
+        "url": "cultura-y-educacion/acuerdos-y-convenios"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Prensa",
+    "submenu": [
+      {
+        "title": "Eventos",
+        "url": "prensa/eventos"
+      },
+      {
+        "title": "Noticias",
+        "url": "prensa/noticias"
+      },
+      {
+        "title": "Imágenes",
+        "url": "prensa/imagenes"
+      },
+      {
+        "title": "Vídeos",
+        "url": "prensa/videos"
+      }
+    ]
+  }
+]

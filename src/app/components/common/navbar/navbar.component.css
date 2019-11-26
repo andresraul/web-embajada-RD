@@ -1,0 +1,4 @@
+/* Ocultando submenus cuando la página esta cargando */
+button[aria-expanded="false"]+.usa-nav__submenu {
+  display: none;
+}

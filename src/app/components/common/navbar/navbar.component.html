@@ -1,0 +1,61 @@
+<div class="usa-navbar">
+  <div class="usa-logo" id="extended-logo">
+    <em class="usa-logo__text">
+      <a routerLink="/" title="Inicio" aria-label="Inicio" class="usa-header__logo grid-row">
+        <div class="grid-col-auto">
+          <img class="usa-header__logo-img" width="80" [src]="config.logo" alt="Embajada Dominicana" />
+        </div>
+        <div class="grid-col-fill">
+          <h1 *ngIf="isMobile" class="usa-header__logo-heading" [innerHTML]="config.mobile_sitename"></h1>
+          <h1 *ngIf="!isMobile" class="usa-header__logo-heading" [innerHTML]="config.sitename"></h1>
+        </div>
+      </a>
+    </em>
+  </div>
+  <button class="usa-menu-btn">Menu</button>
+</div>
+<nav aria-label="Primary navigation" class="usa-nav">
+  <div class="usa-nav__inner">
+    <button class="usa-nav__close">
+      <img src="./assets/img/close.svg" alt="close" />
+    </button>
+    <ul class="usa-nav__primary usa-accordion">
+      <li class="usa-nav__primary-item">
+        <a routerLink="/" class="usa-nav__link"><span>Inicio</span></a>
+      </li>
+      <li *ngFor="let menu of menuData" class="usa-nav__primary-item">
+        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+          aria-controls="extended-nav-section-one">
+          <span>{{menu.title}}</span>
+        </button>
+        <ul id="extended-nav-section-one" class="usa-nav__submenu">
+          <li *ngFor="let submenu of menu.submenu" class="usa-nav__submenu-item">
+            <a routerLinkActive="active" [routerLink]="[submenu.url]">{{submenu.title}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="usa-nav__secondary">
+      <ul class="usa-nav__secondary-links">
+        <li class="usa-nav__secondary-item">
+          <a routerLink="/">Inicio</a>
+        </li>
+        <li class="usa-nav__secondary-item">
+          <a routerLink="contacto">Contacto</a>
+        </li>
+        <li class="usa-nav__secondary-item">
+          <a routerLink="mapa-del-sitio">Mapa del Sitio</a>
+        </li>
+      </ul>
+      <form class="usa-search usa-search--small ">
+        <div role="search">
+          <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+          <input class="usa-input" id="extended-search-field-small" type="search" name="search" placeholder="Buscar..." />
+          <button class="usa-button" type="submit">
+            <span class="usa-sr-only">Search</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>

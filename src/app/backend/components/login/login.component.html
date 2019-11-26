@@ -1,0 +1,73 @@
+<section class="usa-hero">
+    <div class="grid-container">
+        <div class="margin-top-3 margin-bottom-3">
+            <h1 class="usa-hero__heading--alt">{{headerText}}</h1>
+        </div>
+    </div>
+</section>
+
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col-4">
+            <div class="margin-top-5">
+
+                <div *ngIf="successMessage" class="usa-alert usa-alert--success">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Éxito</h3>
+                        <p class="usa-alert__text">{{successMessage}}</p>
+                    </div>
+                </div>
+
+                <div *ngIf="errorMessage" class="usa-alert usa-alert--info">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Información</h3>
+                        <p class="usa-alert__text">{{errorMessage}}</p>
+                    </div>
+                </div>
+
+                <div *ngIf="errorConnection" class="usa-alert usa-alert--error" role="alert">
+                    <div class="usa-alert__body">
+                        <h3 class="usa-alert__heading">Error status</h3>
+                        <p class="usa-alert__text">{{ errorConnection }}</p>
+                    </div>
+                </div>
+
+                <form class="usa-form" [formGroup]="formulario" (ngSubmit)="goToResetPwd? resetPwd(formulario.value) : login(formulario.value)" novalidate="novalidate">
+                    <button *ngIf="goToResetPwd" class="usa-button usa-button--base" (click)="return()">Volver</button>
+                    <fieldset class="usa-fieldset">
+                        <p *ngIf="goToResetPwd" class="bg-accent-warm padding-2">Ingresa aquí tu correo electrónico y te enviaremos un correo con los pasos para restablecer tu contraseña.</p>
+
+                        <div class="usa-form-group" [ngClass]="{'usa-form-group--error': (email.hasError('pattern') && email.touched) || (email.hasError('required') && email.touched)}">
+                            <label class="usa-label" for="email2">{{emailLabel}}</label>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="email.hasError('required') && email.touched">El correo es
+                obligatorio.</span>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="email.hasError('pattern') && email.touched">Formato de correo
+                inválido.</span>
+                            <input [ngClass]="{'usa-input--error': (email.hasError('required') && email.touched) || (email.hasError('pattern') && email.touched)}" formControlName="email" class="usa-input" id="email2" name="email" type="email" aria-describedby="input-error-message">
+                        </div>
+
+                        <div *ngIf="!goToResetPwd" class="usa-form-group usa-form-group--error" [ngClass]="{'usa-form-group--error': (password.hasError('required') && password.touched)}">
+                            <label class="usa-label" for="password">Tu contraseña</label>
+                            <span class="usa-error-message" id="input-error-message" role="alert" *ngIf="password.hasError('required') && password.touched">La
+                contraseña
+                es obligatoria.</span>
+                            <input formControlName="password" class="usa-input" id="password" name="password" type="password" aria-describedby="input-error-message">
+                        </div>
+
+                        <div *ngIf="!goToResetPwd" class="usa-checkbox margin-top-3">
+                            <input class="usa-checkbox__input" id="check" type="checkbox" name="check" formControlName="keep">
+                            <label class="usa-checkbox__label" for="check">Mantener iniciada la sesión</label>
+                        </div>
+
+                        <button class="usa-button  usa-button--unstyled" *ngIf="!goToResetPwd" (click)="goToReset()">¿Olvidaste tu contraseña?</button>
+
+                        <div>
+                            <button class="usa-button" type="submit" [disabled]="goToResetPwd? !email.valid : !formulario.valid">{{submitButton}}</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

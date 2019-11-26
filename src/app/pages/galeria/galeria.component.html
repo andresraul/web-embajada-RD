@@ -1,0 +1,37 @@
+<section class="usa-hero">
+  <div class="grid-container">
+    <div class="margin-top-3 margin-bottom-3">
+      <h1 class="usa-hero__heading--alt">Galería de Fotos
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="usa-layout-docs usa-section" infiniteScroll [infiniteScrollDistance]="10" [infiniteScrollThrottle]="450" [fromRoot]="true" (scrolled)="onScroll()" >
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-12">
+        <section id="photos" class="photos">
+          <ul class="grid-row margin-bottom-2 padding-0 usa-list usa-list--unstyled">
+            <li class="image desktop:grid-col-6" *ngFor="let photoset of galleryPhotosets">
+              <div class="grid-row grid-gap">
+                <div class="desktop:grid-col-5">
+                  <img class="radius-md" [defaultImage]="defaultImage" [lazyLoad]="photoset.photos[0].src" width="110px" height="95px"
+                    (click)="open(photoset.photos, 0)">
+                </div>
+                <div class="desktop:grid-col-7">
+                  <h3 class="summary padding-right-3 margin-top-0">{{photoset.title}} <!-- {{photoset.description}} --> </h3>
+                  <div class="extra">
+                    <div *ngFor="let photo of photoset.photos; let i = index">
+                      <img [defaultImage]="defaultImage" [lazyLoad]="photo.src" (click)="open(photoset.photos, i)" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <app-spinner [show]="showSpinner"></app-spinner>
+      </div>
+    </div>
+  </div>
+</section>

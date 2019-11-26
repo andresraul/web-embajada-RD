@@ -1,0 +1,42 @@
+<section class="usa-hero">
+  <div class="grid-container">
+    <div class="margin-top-3 margin-bottom-3">
+      <h1 class="usa-hero__heading--alt">Contacto
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="usa-layout-docs usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-12">
+        <form class="usa-form">
+          <fieldset class="usa-fieldset">
+    
+            <label class="usa-label" for="title">Título <span class="usa-hint">(opcional)</span></label>
+            <input class="usa-input usa-input--small" id="title" name="title" type="text">
+        
+            <label class="usa-label" for="nombre">Nombre:</label>
+            <input class="usa-input" id="nombre" name="nombre" type="text" required aria-required="true">
+        
+            <label class="usa-label" for="apellido">Apellido</label>
+            <input class="usa-input" id="apellido" name="apellido" type="text" required aria-required="true">
+
+            <label class="usa-label" for="options">Asunto</label>
+            <select class="usa-select" name="options" id="options">
+              <option value>- Elige Uno -</option>
+              <option value="value1">Opción A</option>
+              <option value="value2">Opción B</option>
+              <option value="value3">Opción C</option>
+            </select>
+
+            <label class="usa-label" for="mensaje">Mensaje</label>
+            <textarea class="usa-textarea" id="mensaje" name="mensaje"></textarea>
+
+            <input class="usa-button" type="submit" value="Enviar">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<div class="margin-top-5">
+
+    <div class="grid-container">
+        <div class="grid-row grid-gap">
+
+            <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+                <app-aside-control-panel></app-aside-control-panel>
+            </aside>
+
+            <div class="usa-layout-docs__main desktop:grid-col-9">
+                <button class="usa-button usa-button--secondary" type="button" (click)="logout()">Cerrar la sesión</button>
+                <router-outlet></router-outlet>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>

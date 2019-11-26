@@ -1,0 +1,27 @@
+h3 {
+  line-height: 1.5rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f144";
+    font-family: FontAwesome;
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover:before {
+    color: #fff;
+  }
+}

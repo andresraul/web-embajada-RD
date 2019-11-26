@@ -1,0 +1,32 @@
+<button type="button" class="usa-button" (click)="crear()">Crear nueva publicación</button>
+
+<form [formGroup]="postsForm" class="margin-top-5 margin-bottom-5">
+    <div class="usa-form-group">
+        <label class="usa-label somelabel" for="options">Categoría</label>
+        <select formControlName="category" class="usa-select" name="options" id="options">
+          <option value="EVENTOS">Eventos</option>
+          <option value="NOTICIAS">Noticias</option>
+        </select>
+    </div>
+</form>
+
+
+
+
+<div *ngIf="postList" class="grid-row grid-gap">
+    <div *ngFor="let post of postList" class="tablet:grid-col-6">
+        <div class="grid-row grid-gap margin-bottom-2">
+            <div *ngIf="post.image" class="grid-col-5">
+                <a routerLink="/panel-de-control/publicaciones/publicacion/{{ post._id }}">
+                    <img class="radius-md" [src]="post.image | imagesPosts:post.category">
+                </a>
+            </div>
+            <div class="grid-col-7">
+                <h3 class="margin-top-0 margin-bottom-1"><a class="underline-primary-vivid text-primary" routerLink="/panel-de-control/publicaciones/publicacion/{{ post._id }}">{{ post.title }}</a>
+                </h3>
+                <small class="date-meta">{{ post.created | date: 'dd/MM/yyyy' }}</small>
+                <p class="margin-top-1">{{ post.desc | slice:0:80 }}...</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<section class="usa-hero">
+  <div class="grid-container">
+    <div class="margin-top-3 margin-bottom-3">
+      <h1 class="usa-hero__heading--alt">Videos
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="usa-layout-docs usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="usa-layout-docs__main desktop:grid-col-12">
+        <ul class="grid-row margin-bottom-4 padding-0 usa-list usa-list--unstyled">
+          <li class="desktop:grid-col-6" *ngFor="let recent of recentVideos">
+            <div class="grid-row grid-gap margin-bottom-2 desktop:margin-bottom-4">
+              <div class="desktop:grid-col-5">
+                <a class="video-thumbnail" routerLink="{{recent.id.videoId}}">
+                  <img class="radius-md" [src]="recent.snippet.thumbnails.high.url" alt="{{recent.snippet.title}}">
+                </a>
+              </div>
+              <div class="desktop:grid-col-7">
+                <h3 class="summary padding-right-3 margin-top-0">{{recent.snippet.title}}
+                </h3>
+                <p class="padding-right-3">{{recent.snippet.description.slice(0, 80)}}...</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <app-spinner [show]="showSpinner"></app-spinner>
+      </div>
+    </div>
+  </div>
+</section>
